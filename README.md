@@ -32,6 +32,56 @@ Program to print the text “Hello World”.
 Developed by: Dinesh.S
 Registeration Number : 212220230011
 */
+
+MainActivity.java
+
+package com.example.test;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState); setContentView(R.layout.activity_main);
+        Toast toast=Toast.makeText(getApplicationContext(),"OnCreate Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onStart(){ super.onStart();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnStart Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onResume(){ super.onResume();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnResume Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onPause(){ super.onPause();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnPause Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onStop(){ super.onStop();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnStop Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onRestart(){ super.onRestart();
+
+        Toast toast=Toast.makeText(getApplicationContext(),"OnRestart Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onDestroy(){ super.onDestroy();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnDestroy Invoked",Toast.LENGTH_LONG);
+        toast.show();
+    }
+}
+
+
+activity_main.xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -54,8 +104,17 @@ Registeration Number : 212220230011
 
 ## OUTPUT
 
-![Screenshot (522)](https://user-images.githubusercontent.com/75235813/162229824-f082f98d-f8ea-4aab-9489-ffc92e549df9.png)
+![Screenshot (533)](https://user-images.githubusercontent.com/75235813/162773867-41cdc271-534c-43a0-8ea3-b8bd48b48904.png)
 
+![Screenshot (537)](https://user-images.githubusercontent.com/75235813/162775008-82f27bfe-f010-40ff-8bfd-2b0b3930bf28.png)
+
+![Screenshot (536)](https://user-images.githubusercontent.com/75235813/162775133-4b038f24-d7ed-4396-ab9b-cec3be48b8e3.png)
+
+![Screenshot (534)](https://user-images.githubusercontent.com/75235813/162775507-9446d453-9d59-42dc-bb2b-bfc1216faadd.png)
+
+![Screenshot (535)](https://user-images.githubusercontent.com/75235813/162775649-2b954ea7-e493-4f94-ad6a-fa234bd087d7.png)
+
+![Screenshot (541)](https://user-images.githubusercontent.com/75235813/162775813-bcba3992-dd19-47f6-94c8-62d18bac26f0.png)
 
 
 
